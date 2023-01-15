@@ -132,10 +132,24 @@ ul li {
 
 }
 
+.line {
+    display: flex;
+}
+
+.margin {
+    width: -5px;
+    margin-left: 0;
+    height: 89px;
+    margin-right: 16px;
+    border-left: 5px solid #FF900E;
+    ;
+}
+
 .section2-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
+    margin-left: 0;
 }
 
 .section2-discription {
@@ -144,7 +158,10 @@ ul li {
     width: 506px;
 }
 
-.mini-section-discription {}
+.mini-section-discription {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
 
 .mini-heading {
     font-weight: 600;
@@ -176,7 +193,7 @@ ul li {
     position: absolute;
 }
 
-.small{
+.small {
     display: flex;
     font-size: 24px;
     margin-left: 50px;
@@ -204,6 +221,24 @@ ul li {
     width: 240px;
     display: flex;
     flex-direction: column;
+    background: #e7e6e6;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    transition: height 1s , width 1s , transform 1s;
+
+}
+.box:hover{
+    height: 240px;
+    width: 240px;
+    transform: rotate(25deg);
+    background-color: #FF900E;
+    
+}
+.inter-box{
+    text-align: center;
+}
+.facts-peragraph{
+    font-weight: 600;
+font-size: 20px;
 }
 
 .facts-heading {
@@ -211,13 +246,6 @@ ul li {
     font-size: 45px;
     color: #131313;
 }
-
-/* .facts-peragraph1 {
-    font-weight: 600;
-    font-size: 20px;
-    color: #727272;
-
-} */
 
 .primary-peragraph1 {
     font-weight: 400;
@@ -248,6 +276,17 @@ ul li {
     grid-gap: 100px;
 }
 
+/* section 5 */
+.section5 {
+    width: 1079px;
+    height: 165px;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin-top: 65px;
+    padding: 31px 105px;
+    border-radius: 10px;
+}
+
 .footer {
     width: 1440px;
     height: 100px;
@@ -263,8 +302,158 @@ ul li {
     justify-content: center;
 }
 
-/* .small{
-    display: flex;
-    font-size: 24px;
-    margin-left: 50px;
-} */
+
+/* media quaires for responsive the wehbsite */
+
+@media screen and (max-width : 576px) {
+    .header {
+        height: 1000px;
+    }
+
+    .image1 {
+        width: 88%;
+        height: 277px;
+        margin-top: 240px;
+    }
+
+    .header-discription {
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        margin-top: 50px;
+        margin-right: 13px;
+        flex-direction: column;
+    }
+
+    .nav-title {
+        margin-bottom: 24px;
+        margin-left: 61px;
+    }
+
+
+    /* section 1 */
+
+
+    .feature {
+        display: flex;
+        margin-top: 1068px;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .feature-discripton {
+        width: 354px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .primary-peragraph1 {
+        width: 300px;
+        height: 60px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+
+    /* section 2 */
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+        width: -55px;
+    }
+
+    .image2 img {
+        margin-top: 225px;
+        width: 100%;
+    }
+
+    .section2-discription {
+        width: 90%;
+    }
+
+    .btn-primary-1 {
+        width: 292px;
+        height: 180px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 65px;
+        background: #FF900E;
+        border-radius: 15px;
+        border: none;
+        padding: 45px 42px;
+        margin-top: 1481px;
+        margin-left: 0px;
+        position: absolute;
+    }
+
+    /* section 3 */
+
+    .section3 {
+        margin-top: 150px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .facts-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 23px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+
+    /* section 4 */
+
+    .section4 {
+        margin-top: 100px;
+    }
+
+    .sponsor {
+        width: 90%;
+        height: 250px;
+        text-align: center;
+    }
+
+    .sponosrs-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+        margin: 0;
+    }
+
+    /* section 5  */
+
+    .section5 {
+        width: 90%;
+        background-color: #FFF4E7;
+        text-align: center;
+        margin-top: 65px;
+        padding: 32px 0;
+        border-radius: 10px;
+        padding-bottom: 126px;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 348px;
+        height: 136px;
+        font-size: 11px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+}
